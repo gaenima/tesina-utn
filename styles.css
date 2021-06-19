@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(241, 222, 199);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Krona One', sans-serif;
+}
+
+ img {
+    width: 10px;
+    margin: 10px auto;
+    padding: 20px;
+}
+h5{
+    color: rgb(233, 74, 25);
+}
+ i {
+    color: rgb(28, 129, 28);
+    font-size: medium;
+}
+.card-group{
+    background-color: rgb(241, 222, 199);
+}
+.card-img-top{
+    padding: 10px;
+    background-color: rgb(241, 222, 199);
+    border-radius: 5px;
+}
+.dolar{
+    display: inline-block;
+    color: rgb(35, 14, 95);
+    
+}
+
