@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 // import { ExpensesList } from './ExpensesList';
 import * as mutations from '../store/mutations';
 import Footer from './Footer'
+import swal from 'sweetalert'
 
 const ExpensDetail = ({
     id,
@@ -41,8 +42,24 @@ const ExpensDetail = ({
 
         <Link to="/budgetList">
         <button className="btn btn btn-warning mt-2" 
-        onClick={()=>{if(window.confirm('¿Eliminar gasto?'))
-        {deleteExpens(id)}
+        onClick={()=>{
+            swal({
+                title: "Eliminar",
+                text: '¿Seguro que desea eliminar este gasto?',
+                icon: 'warning',
+                buttons: ['Cancelar', 'Confirmar'],
+            }).then(response=>{
+                if(response){
+                    {deleteExpens(id)}
+                  swal({
+                    text: 'Gasto eliminado con éxito',
+                    icon: 'success',
+                    timer:'2000'
+                  })
+                }
+            })
+        //     if(window.confirm('¿Eliminar gasto?'))
+        // {deleteExpens(id)}
     }
         }>Borrar</button>
         </Link>

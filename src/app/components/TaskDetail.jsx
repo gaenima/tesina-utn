@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import * as mutations from "../store/mutations";
 import Footer from './Footer'
+import swal from 'sweetalert'
 
 const TaskDetail = ({
   id,
@@ -55,8 +56,25 @@ const TaskDetail = ({
          <Link to="/dashboard">
         <button className="btn btn btn-warning mt-2" 
         onClick={
-          ()=>{ if(window.confirm('¿Borrar actividad?'))  
-               { deleteTask(id) }                 
+          ()=>{ 
+            swal({
+              title: "Eliminar",
+              text: '¿Seguro que desea eliminar esta actividad?',
+              icon: 'warning',
+              buttons: ['Cancelar', 'Confirmar'],
+            }).then(response=>{
+              if(response){
+                { deleteTask(id) }
+                swal({
+                  text: 'Actividad eliminada con éxito',
+                  icon: 'success',
+                  timer:'2000'
+
+                })
+              }
+            })
+            // if(window.confirm('¿Borrar actividad?'))  
+            //    { deleteTask(id) }                 
          }
         }>Borrar</button> 
         </Link>
