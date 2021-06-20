@@ -2,12 +2,13 @@
  import { connect } from "react-redux";
  import { ConnectedTaskList } from "./TaskList";
  //import { ConnectedFilter } from './Filter'
- import Footer from './Footer'
+
  import { Link } from 'react-router-dom';
+ 
 
  export const Dashboard = ({ groups, tasks}) => (
-  <div className="row-lg">
-
+  <div className="content">
+    
           {/* <div className="col-small">
               <ConnectedFilter />
           </div> 
@@ -15,7 +16,7 @@
      
      {groups.map(group=>(
         <ConnectedTaskList key={group.id} id={group.id} name={group.name} 
-        className="col p-4 m-2"/>
+        className="card p-4 m-4"/>
      ))}
  
          
@@ -27,9 +28,6 @@
              
          </p> */}
          
-       
-    <Footer />
-
      </div>
      )
  function mapStateToProps(state) {

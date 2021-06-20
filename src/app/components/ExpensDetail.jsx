@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 // import { ExpensesList } from './ExpensesList';
 import * as mutations from '../store/mutations';
-import Footer from './Footer'
 import swal from 'sweetalert'
 
 const ExpensDetail = ({
@@ -65,11 +64,7 @@ const ExpensDetail = ({
         </Link>
         
         </div>
-        <br/>
-        <br/>
-        <br/>
-      <Footer />
-
+      
     </div>
 );
 

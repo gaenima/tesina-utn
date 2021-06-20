@@ -1,8 +1,12 @@
 body{
     background-color: rgb(241, 222, 199);
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Mali', cursive; 
+}
+#app{
     margin: 0px;
     padding: 0px;
-    font-family: 'Krona One', sans-serif;
 }
 
  img {
@@ -30,4 +34,31 @@ h5{
     color: rgb(35, 14, 95);
     
 }
+.flex{
+    display: flex;
 
+}
+.sidebar {
+    width: 14rem;
+    height: calc(100vh - 60px);
+    border-right: 1px solid gray;
+}
+div ul {
+    list-style: none;
+    padding: 1rem 2rem;
+}
+div ul li{
+  margin-bottom: 1rem;
+}
+div ul li a{
+    text-decoration: none;
+}
+.content{
+    width: calc(100vw - 14rem);
+}
+.card-group{
+    width: calc(100vw - 14rem);
+}
+.btn{
+    width: auto;
+}

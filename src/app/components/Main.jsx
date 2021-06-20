@@ -14,6 +14,8 @@ import { ConnectBudgetD } from './BudgetD';
 import { Reports } from './Reports';
 import { Redirect } from 'react-router-dom';
 import { ConnectedSignup } from './Signup'
+import { ConnectedSidebar } from "./Sidebar";
+import Footer from './Footer'
 
 const RouteGuard = Component => ({match}) => {
   //console.info("Route guard", match);
@@ -29,10 +31,13 @@ const RouteGuard = Component => ({match}) => {
     <Router history={history}>
      <Provider store={store}>
            <div>
-          
+           
                 <ConnectedNavigation/> 
+                <div className="flex">
+                <ConnectedSidebar />
                 <Route exact path="/" component={ConnectLogin}/>
-                <Route exact path="/signup" component={ConnectedSignup}/>
+                <Route exact path="/signup" component={ConnectedSignup}/>              
+                <div className="content">
                 <Route 
                 exact 
                 path="/dashboard"
@@ -69,6 +74,9 @@ const RouteGuard = Component => ({match}) => {
                 render = {RouteGuard(Reports)}
                 //render={()=>(<ConnectedReports/>)}
                 />
+                </div>
+                </div>
+                 <Footer />
                 </div>
         </Provider>
         </Router>

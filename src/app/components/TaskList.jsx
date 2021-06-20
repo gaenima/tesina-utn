@@ -16,16 +16,17 @@ import { Link } from "react-router-dom";
          {tasks.map(task=>(
             
             <Link to={`/task/${task.id}`} key={task.id}>
-                <div className="card p-2 col-6" >{task.name}</div>
+                <div className="card p-2 col-4" >{task.name}</div>
             </Link> ))}
            
           
 
         </div>
-        
+          <div>
             <button onClick={() => createNewTask(id)}
-            className="btn btn-primary btn-block mt-2"
+            className="btn btn-primary "
              > Nueva actividad </button>
+            </div>
         </div>
  )
 

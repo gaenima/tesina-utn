@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import * as mutations from "../store/mutations";
-import Footer from './Footer'
 import swal from 'sweetalert'
 
 const TaskDetail = ({
@@ -27,12 +26,13 @@ const TaskDetail = ({
         </div>
         <br/>
       <div>
-     <span><i>Indicar la prioridad </i></span>
+     <span><i>Prioridad: </i></span>
          <button type="button" className="btn btn-outline-success " onClick={()=>setTaskCompletition(id, !isComplete)}>{isComplete ? `Importante` : `Opcional`}</button>
       </div>
  
         <br/>
      <div className="btn-group-m" role="group" aria-label="Button group with nested dropdown" >
+     <span><i>Estado: </i></span>
         <select onChange={setTaskGroup} value={task.group}
         type="button" className="btn btn-success"
         >
@@ -50,7 +50,7 @@ const TaskDetail = ({
       <br/>
       <div>
         <Link to="/dashboard">
-        <button className="btn btn-primary mt-2" >Realizado</button>
+        <button className="btn btn-primary mt-2" >Listo</button>
          </Link>
          
          <Link to="/dashboard">
@@ -81,11 +81,7 @@ const TaskDetail = ({
 
       </div>
       </div>
-      <br/>
-      <br/>
-      <br/>
-     <Footer />
-
+     
     </div>
 );
        

@@ -3,15 +3,16 @@ import { connect } from "react-redux";
 import { ConnectRepoBar } from "./ReportBarChart";
 import { ConnectRepoDona } from './ReportDonaChart';
 import { ConnectRepoBarra} from './ReportPieChart'
-import Footer from './Footer'
 
 
 let arregloR = [];
 export const Reports = () => (
     //
-<div>
-<br/>
+<div >
+  
+<div className="content">
     <ConnectRepoBar />
+    
     <br/> 
     <br/>
     <br/>
@@ -24,9 +25,8 @@ export const Reports = () => (
     <ConnectRepoBarra />    
         <br/>
         <br/>
-  <Footer />
-  
-   
+ </div> 
+     
 </div>
 )
 

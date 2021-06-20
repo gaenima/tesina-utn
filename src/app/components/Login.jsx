@@ -2,9 +2,11 @@ import React from 'react';
 import * as mutations from '../store/mutations';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom'
-import Footer from './Footer'
+
+import swal from 'sweetalert'
 
 const LoginComponent = ({authenticateUser, authenticated})=>{
+   
     return <div className="container" >
         
         {/* <div className="card p-3 col-4 ">
@@ -35,7 +37,8 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
         </div> */}
 <div className="card-group">
   <div className="card  col-4">
-    <img src="https://cdn2.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/723_Business_list_plan_planning_task-256.png" className="card-img-top" alt="planning icon"/>
+    {/* <img src="https://cdn2.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/723_Business_list_plan_planning_task-256.png" className="card-img-top" alt="planning icon"/> */}
+    <img src="https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-03-512.png" className="card-img-top" alt="planning icon"/>
     <div className="card-body">
       <h5 className="card-title">Organizá tus actividades</h5>
       <p className="card-text">Podrás panificar tus actividades e indicar el estado en el que se encuentran.</p>
@@ -44,7 +47,7 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
   </div>
  
   <div className="card col-4">
-    <img src="https://cdn4.iconfinder.com/data/icons/business-solid-the-capitalism/64/Money_asset_income_management-512.png" className="card-img-top" alt="budget icon"/>
+    <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-16-512.png" className="card-img-top" alt="budget icon"/>
     <div className="card-body">
       <h5 className="card-title">Administrá tu presupuesto</h5>
       <p className="card-text">Podrás establecer un monto disponible y agregar los gastos que realices. </p>
@@ -61,10 +64,11 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
             defaultValue="Dev" className="form-control"/>
             <input type="password" placeholder="Contraseña" name="password"
              className="form-control mt-2"/>
-            {authenticated === mutations.NOT_AUTHENTICATED
-            ? <p>Login incorrecto</p>
+            {authenticated === mutations.NOT_AUTHENTICATED  
+             ? <p>Usuario o contraseña incorrectos</p>
+        
             : null
-            }
+           }
             <button type="submit"
             className="form-control mt-2 btn btn-primary"
             >Entrar</button>
@@ -79,11 +83,12 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
     </div>
   </div>
 </div>
-<br/>
-<Footer />
+
 </div>
 
 };
+
+
 const mapStateToProps = ({session})=>({
     authenticated:session.authenticated
 })

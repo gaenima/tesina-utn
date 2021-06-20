@@ -1,11 +1,12 @@
-import { connect } from "react-redux";
+import { connect, useStore } from "react-redux";
 import { Link } from "react-router-dom";
 import React from "react";
+import { AUTHENTICATED, NOT_AUTHENTICATED, requestAuthenticateUser, SET_STATE, SET_TASK_COMPLETE, session } from "../store/mutations";
 
 const Navigation = () => (
    <div >
   
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-light bg-light">
   <span className="navbar-brand" ></span>
   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" 
   aria-controls="navbarColor03" aria-expanded="true" aria-label="Toggle navigation"> */}
@@ -23,7 +24,7 @@ const Navigation = () => (
  
 </nav>
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a className="navbar-brand" href="#">ORGANIZADOR</a>
+  <a className="navbar-brand"  >ORGANIZADOR</a>
   {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     {/* <span className="navbar-toggler-icon"></span> */}
   {/* </button> */} 
@@ -46,8 +47,9 @@ const Navigation = () => (
             Reportes 
          </Link>
       </li>
+    
     </ul>
-   
+ 
   </div>
 </nav>
 

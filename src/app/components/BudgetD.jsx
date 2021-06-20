@@ -8,16 +8,15 @@ const BudgetD = ({
   id,
     budget,  
     setBudget,
-   
     
 })=>(
     
     <div className="container">
      <div className="card p-3 col-3" >
-        <h3> Modificar monoto inicial</h3>
+        <h3> Modificar monto inicial</h3>
         <br/>
       <div className="dolar">
-          <span className="dolar">$$$ </span>
+         
           <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$" 
         className="form-control form-control"/>
       </div> 
@@ -28,9 +27,7 @@ const BudgetD = ({
         </Link>
         </div>
         </div>
-        <br/>
-        <br/>   
-       <Footer />
+       
     </div>
 );
 const mapStateToProps =(state, ownProps)=> {
