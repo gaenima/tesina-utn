@@ -57,14 +57,19 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
         </h2>
         <br></br>
         <form onSubmit={requestUserAccountCreation} method='post'>
-            <label>
+            <div >
                 <span>Usuario</span>
-                <input type="text"  name="username" placeholder="Ingrese un usuario" className="form-control" defaultValue="Usuario"/>
-            </label>
-            <label>
+                <input type="text"  name="username" placeholder="Ingrese un usuario" className="form-control" />
+            </div>
+            <div>
+                <span>Correo</span>
+                <input type="text"  name="correo" placeholder="Ingrese un correo" className="form-control" />
+            </div>
+            <div>
                 <span>Contraseña</span>
-                <input type="password" name="password" placeholder="Ingrese una clave" className="form-control" defaultValue="Contraseña"/>
-            </label>
+                <input type="password" name="password" placeholder="Ingrese una clave" className="form-control" />
+            </div>
+            <br/>
           
           {/* {authenticated == mutations.USERNAME_RESERVED ? <p>El usuario ya existe. Por favor elija otro nombre</p> : null} */}
          
@@ -92,9 +97,10 @@ const mapDispatchTiProps = (dispatch) => ({
     requestUserAccountCreation(e){
         e.preventDefault()
         let username = e.target[`username`].value;
+        let correo = e.target[`correo`].value;
         let password = e.target[`password`].value;
         console.log("Creating new user!",username,password);
-        dispatch(mutations.requestUserAccountCreation(username,password));
+        dispatch(mutations.requestUserAccountCreation(username,correo,password));
     }
 })
 

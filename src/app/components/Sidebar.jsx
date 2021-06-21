@@ -7,7 +7,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <ul>
                 <li>
-                    <Link to="/dashboard"> Actividad</Link>
+                    <Link to="/dashboard"> Actividades</Link>
                 </li>
                 <li>
                     <Link to="/budgetList">Presupuesto</Link>

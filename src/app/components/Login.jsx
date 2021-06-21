@@ -60,8 +60,13 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
         <h2>Iniciar sesión</h2>
         <br/>
         <form onSubmit={authenticateUser} >
-            <input type="text" placeholder="Usuario" name="username"
+          <div>
+            <span>Usuario</span>
+            <input type="text" placeholder="Usuario" name="username" 
             defaultValue="Dev" className="form-control"/>
+          </div>  
+          <div>
+            <span>Contraseña</span>
             <input type="password" placeholder="Contraseña" name="password"
              className="form-control mt-2"/>
             {authenticated === mutations.NOT_AUTHENTICATED  
@@ -69,9 +74,10 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
         
             : null
            }
+           </div>
             <button type="submit"
             className="form-control mt-2 btn btn-primary"
-            >Entrar</button>
+            >Iniciar sesión</button>
         </form>
         <br/>
         <h4>¿No te registraste?</h4>
