@@ -10,6 +10,7 @@ body{
 }
 .flex{
     display: flex;
+   
 
 }
  img {
@@ -27,17 +28,12 @@ h5{
 
 .card-group{
     background-color: rgb(241, 222, 199);
-    display: flex;
+  
 }
 .card-img-top{
     padding: 10px;
     background-color: rgb(241, 222, 199);
     border-radius: 5px;
-}
-.dolar{
-    display: inline-block;
-    color: rgb(35, 14, 95);
-    
 }
 
 .sidebar {
@@ -46,9 +42,9 @@ h5{
     width:15%;
   height: 100vh;
     border-right: 2px solid rgb(121, 38, 86);
-    /* background-color: rgb(121, 38, 86); */
+   color: rgb(121, 38, 86); 
     position: fixed;
-  top: 12%;
+  top: 13%;
   left: 0;
 }
 div ul {
@@ -63,18 +59,33 @@ div ul li a{
 }
 .content{
     /* width: calc(100vw - 14rem); */
-    width: 80%;
+    width: 100vw;
     /* height: 1000vh; */
     position: relative;
     top: 0;
-    left: 10%;
+    left: 15%;
+    bottom: auto;
 }
 .card-group{
+    margin: 0px;
     width: calc(100vw - 14rem);
+    height: auto;
+    
 }
 .btn{
     width: auto;
 }
 .enlinea{
-    display: inline-flex;
+    display: inline-block;
+}
+.titulo{
+    margin-left: 0px;
+    position: relative;
+    color:  rgb(121, 38, 86);;
+}
+.pie{
+    margin-bottom: 0px;
+}
+.container{
+    margin: 0px;
 }

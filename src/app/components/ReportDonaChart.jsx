@@ -24,7 +24,7 @@ function DonaChart({tasks, task, a, b, c, ownProps, groups, arreglo} ){
     const options = {
       title: {
         display: true,
-        text: 'Reporte 2: Porcentaje de actividades por grupo',
+        text: 'Porcentaje de actividades por grupo',
         fontSize: 20,
         fontColor: 'rgba(200,80,50,1)',
         fontFamily: "Ubuntu"

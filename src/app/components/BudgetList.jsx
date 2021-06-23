@@ -7,7 +7,7 @@ import {ConnectFinalAmount} from './FinalAmount';
 
 
 export const BudgetList = ({budgets }) => (
-<div className="content">
+<div className="container">
    <div>
         {budgets.map(budget=>(
              <ConnectedBudgetDetail key={budget.id} id={budget.id} name={budget.name} 

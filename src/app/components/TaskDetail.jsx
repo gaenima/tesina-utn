@@ -16,13 +16,13 @@ const TaskDetail = ({
     setTaskGroup,
     deleteTask
 }) => (
-  <div className="container" >
+  <div className="content" >
     <div className="card p-3 col-m5">
        <h3>Modificar actividad</h3>
         <div> 
         <br/>
                 <input onChange={setTaskName} value={task.name}
-                className="form-control form-control-lg"/>
+                className="form-control form-control "/>
         </div>
         <br/>
       <div>
@@ -80,8 +80,17 @@ const TaskDetail = ({
         </Link>
 
       </div>
+      <br/>
       </div>
-     
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
 );
        

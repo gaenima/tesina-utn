@@ -11,14 +11,14 @@ const BudgetD = ({
     
 })=>(
     
-    <div className="container">
-     <div className="card p-3 col-3" >
+    <div className="content">
+     <div className="card p-3 col-m5" >
         <h3> Modificar monto inicial</h3>
         <br/>
-      <div className="dolar">
-         
+      <div className="flex">
+         <span>$ </span>
           <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$" 
-        className="form-control form-control"/>
+        className="form-control "/>
       </div> 
            <br/>
            <div>
@@ -27,7 +27,23 @@ const BudgetD = ({
         </Link>
         </div>
         </div>
-       
+       <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
 );
 const mapStateToProps =(state, ownProps)=> {

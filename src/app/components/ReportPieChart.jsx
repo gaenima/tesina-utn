@@ -28,7 +28,7 @@ export function ReportBarraChart ({expenses, budgets, disp, amountInitial}){
      const options = {
        title: {
          display: true,
-         text: 'Reporte 3: Presupuesto',
+         text: 'Presupuesto disponible y gastos totales',
          fontSize: 20,
          fontColor: 'rgba(200,80,50,1)',
          fontFamily: "Ubuntu"

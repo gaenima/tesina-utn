@@ -25,7 +25,7 @@ export function ReportBarChart ({ tasks,  arreglo}){
     const options = {
       title: {
         display: true,
-        text: 'Reporte 1: Cantidad de actividades por grupo',
+        text: 'Cantidad de actividades por grupo',
         fontSize: 20,
         fontColor: 'rgba(200,80,50,1)',
         fontFamily: "Ubuntu"

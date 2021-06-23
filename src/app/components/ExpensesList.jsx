@@ -4,7 +4,7 @@ import {requestExpensCreation } from '../store/mutations';
 import { Link } from 'react-router-dom';
 
 export const ExpensesList = ({ expenses, id, createNewExpens, amount })=>(  
-<div className="card p-4 m-4 ">
+<div className="card p-4 mt-2 ">
             <h2>
                 Gastos en A$R
             </h2>

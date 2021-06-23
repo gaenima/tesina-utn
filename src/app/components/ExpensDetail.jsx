@@ -18,20 +18,27 @@ const ExpensDetail = ({
     deleteExpens
     
 })=>(
-    <div className="card p-3 col-m5" >
-        <div>
+    <div className="content" >
+        <div className="card p-3 col-m5">
             <h3>Modificar gasto</h3>
-          <div>
+          
           <br/>
+          <div>
+          <span><i>Descripción </i></span>
             <input  onChange={setExpensName} value={expens.name} 
             className="form-control form-control-lg"/>
             
           </div>   
           <div className="mt-3" >
-             <input type="number" onChange={setExpensAmount} value= {expens.amount} 
+          <br/>
+          <span><i>Monto </i></span>
+          <div className="flex">
+          <span>$ </span>
+             <input defaultValue="$" type="number" onChange={setExpensAmount} value= {expens.amount} 
              className="form-control form-control-lg" />
+             </div>
             </div> 
-        </div>
+        
         <br/>
        
         <div>
@@ -64,7 +71,18 @@ const ExpensDetail = ({
         </Link>
         
         </div>
-      
+        <br/>
+      <br/>
+        </div>
+        <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
 );
 

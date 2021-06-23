@@ -8,9 +8,12 @@ import { ConnectRepoBarra} from './ReportPieChart'
 let arregloR = [];
 export const Reports = () => (
     //
-<div >
-  
-<div className="content">
+<div className="container">
+<h2 className="titulo">REPORTES</h2>
+<br/>
+<div className="card p-4 mt-2">
+    
+    <br/>
     <ConnectRepoBar />
     
     <br/> 

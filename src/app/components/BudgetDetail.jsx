@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
                                  expenses, expens, total }) => (
-  <div className="card p-4 m-4 "  >
+  <div >
         {/* <h2 >
             {name} 
             
@@ -16,11 +16,12 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
             {amountInitial}
         </h2>
         <h2>   {amountFinal} </h2> */}
-   
-      <div  >   
+   <h2 className="titulo">PRESUPUESTO</h2>
+   <br/>
+     <div className=" card p-4 mt-2 " >
       <div className="card p-2 mt-2" >
               <h2>Monto inicial</h2>
-             
+           
           { budgets.map(budget=>(
             <Link to={`/budgetD/${budget.id}`} key={budget.id}>
          <div className="text-right" >
@@ -29,7 +30,7 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
           </Link> 
           ))}
       </div >
-      <div className=" p-2 mt-2">
+      <div className="">
                
                 <div className="card p-2 mt-2"> 
                   
@@ -54,7 +55,7 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
        
         
        </div>    
-  </div>   
+       </div>
 
 </div>         
 );

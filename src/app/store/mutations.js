@@ -23,6 +23,7 @@ export const DELETE_EXPENS = `DELETE_EXPENS`;
 
 export const REQUESR_USER_ACCOUNT_CREATION = `REQUESR_USER_ACCOUNT_CREATION`;
 
+export const DELETE_ALL_TASK = `DELETE_ALL_TASK`;
 
 export const requestTaskCreation = (groupID) => ({
   type: REQUEST_TASK_CREATION,
@@ -122,3 +123,4 @@ export const setTaskCompletion = (id, isComplete) => ({
     username,
     password
   });
+

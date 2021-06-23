@@ -7,8 +7,9 @@
  
 
  export const Dashboard = ({ groups, tasks}) => (
-  <div className="content">
-    
+  <div className="container">
+    <h2 className="titulo">ACTIVIDADES</h2>
+    <br/>
           {/* <div className="col-small">
               <ConnectedFilter />
           </div> 
@@ -16,7 +17,7 @@
      
      {groups.map(group=>(
         <ConnectedTaskList key={group.id} id={group.id} name={group.name} 
-        className="card p-4 m-4"/>
+        className="card p-4 mt-2 "/>
      ))}
  
          
