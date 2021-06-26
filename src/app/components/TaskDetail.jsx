@@ -16,7 +16,7 @@ const TaskDetail = ({
     setTaskGroup,
     deleteTask
 }) => (
-  <div className="content" >
+  <div className="container" >
     <div className="card p-3 col-m5">
        <h3>Modificar actividad</h3>
         <div> 

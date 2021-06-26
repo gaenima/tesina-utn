@@ -11,7 +11,7 @@ const BudgetD = ({
     
 })=>(
     
-    <div className="content">
+    <div className="container">
      <div className="card p-3 col-m5" >
         <h3> Modificar monto inicial</h3>
         <br/>

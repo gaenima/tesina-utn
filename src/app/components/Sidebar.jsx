@@ -6,14 +6,14 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul>
-                <li>
-                    <Link to="/dashboard"> Actividades</Link>
+                <li className="nav-item">
+                    <Link to="/dashboard" className="nav-link"> Actividades</Link>
                 </li>
-                <li>
-                    <Link to="/budgetList">Presupuesto</Link>
+                <li className="nav-item">
+                    <Link to="/budgetList" className="nav-link">Presupuesto</Link>
                 </li>
-                <li>
-                    <Link to="/reports">Reportes</Link>
+                <li className="nav-item">
+                    <Link to="/reports" className="nav-link">Reportes</Link>
                 </li>
             </ul>
         </div>

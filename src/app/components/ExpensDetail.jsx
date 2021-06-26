@@ -18,7 +18,7 @@ const ExpensDetail = ({
     deleteExpens
     
 })=>(
-    <div className="content" >
+    <div className="container" >
         <div className="card p-3 col-m5">
             <h3>Modificar gasto</h3>
           
@@ -75,6 +75,8 @@ const ExpensDetail = ({
       <br/>
         </div>
         <br/>
+      <br/>
+      <br/>
       <br/>
       <br/>
       <br/>

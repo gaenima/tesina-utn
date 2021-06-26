@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 <div >
 
     <div className="card p-4 mt-2 ">
-      <h3 className="card-title ">{name}</h3>
+      <h2 className="card-title ">{name}</h2>
       <div className="card-text">       
          {tasks.map(task=>(
             
@@ -71,7 +71,7 @@ const mapStateToProps = (state, {name, id})=>{
             console.log("creando nueva actividad...", id);
            dispatch(requestTaskCreation(id));
    }
-   
+
   }
  }
 

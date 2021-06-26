@@ -10,7 +10,6 @@ body{
 }
 .flex{
     display: flex;
-   
 
 }
  img {
@@ -26,6 +25,12 @@ h5{
     font-size: medium;
 }
 
+footer{
+    
+  
+    border-right: 2px solid rgb(121, 38, 86);
+    
+}
 .card-group{
     background-color: rgb(241, 222, 199);
   
@@ -39,8 +44,8 @@ h5{
 .sidebar {
     /* width: 13rem;
     height: calc(100vh); */
-    width:15%;
-  height: 100vh;
+    width:10%;
+  height: calc(90vh - 20px);
     border-right: 2px solid rgb(121, 38, 86);
    color: rgb(121, 38, 86); 
     position: fixed;
@@ -59,17 +64,20 @@ div ul li a{
 }
 .content{
     /* width: calc(100vw - 14rem); */
-    width: 100vw;
-    /* height: 1000vh; */
+    width: calc(100vw - 15%);
+    min-height: calc(100vh - 233px);
     position: relative;
-    top: 0;
+    top: 0%;
     left: 15%;
-    bottom: auto;
+    right: -15%;
+    
+    
+   
 }
 .card-group{
     margin: 0px;
-    width: calc(100vw - 14rem);
-    height: auto;
+    width: calc(100vw - 230px);
+    max-height: calc(100vh - 200px);
     
 }
 .btn{
@@ -83,9 +91,17 @@ div ul li a{
     position: relative;
     color:  rgb(121, 38, 86);;
 }
-.pie{
+/* .pie{
     margin-bottom: 0px;
-}
+} */
 .container{
     margin: 0px;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 0px;
+    border-radius: 75%;
+    background-color: rgb(241, 222, 199);
+    margin: auto;
 }
