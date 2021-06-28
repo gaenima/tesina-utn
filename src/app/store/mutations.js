@@ -23,7 +23,9 @@ export const DELETE_EXPENS = `DELETE_EXPENS`;
 
 export const REQUESR_USER_ACCOUNT_CREATION = `REQUESR_USER_ACCOUNT_CREATION`;
 
-export const DELETE_ALL_TASK = `DELETE_ALL_TASK`;
+export const DELETE_By_GROUP = `DELETE_By_GROUP`;
+export const DELETE_ALL_EXPENSE = `DELETE_ALL_EXPENSE`;
+
 
 export const requestTaskCreation = (groupID) => ({
   type: REQUEST_TASK_CREATION,
@@ -123,4 +125,11 @@ export const setTaskCompletion = (id, isComplete) => ({
     username,
     password
   });
+ export const deleteByGroup = (id) => ({
+   type: DELETE_By_GROUP,
+   id
+ })
+export const deleteAllExpense = () => ({
+  type: DELETE_ALL_EXPENSE
 
+})

@@ -1,7 +1,9 @@
  import React from "react";
  import { connect } from "react-redux";
  import { ConnectedTaskList } from "./TaskList";
+
  //import { ConnectedFilter } from './Filter'
+
 
  import { Link } from 'react-router-dom';
  
@@ -9,6 +11,7 @@
  export const Dashboard = ({ groups, tasks}) => (
   <div className="container">
     <h2 className="titulo">ACTIVIDADES</h2>
+    
     <br/>
           {/* <div className="col-small">
               <ConnectedFilter />

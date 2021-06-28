@@ -2,8 +2,10 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-const Sidebar = () => {
+const Sidebar =() => {
+             
     return (
+     
         <div className="sidebar">
             <ul>
                 <li className="nav-item">
@@ -18,6 +20,7 @@ const Sidebar = () => {
             </ul>
         </div>
     )
+  
 }
 
 export const ConnectedSidebar = connect(state => state)(Sidebar)

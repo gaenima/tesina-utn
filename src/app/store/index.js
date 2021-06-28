@@ -11,7 +11,7 @@ import * as mutations from "./mutations";
 //import results from './reducers/results';
 //import suggestions from './reducers/suggestions';
 
-// //import { taskCreationSaga } from './sagas.mock';
+//import { taskCreationSaga } from './sagas.mock';
 
 export const store = createStore(
   
@@ -73,6 +73,9 @@ export const store = createStore(
                     });
                    case mutations.DELETE_TASK:
                    return tasks.filter((task)=> task.id !== action.id)
+
+                   case mutations.DELETE_By_GROUP:
+                    return tasks.filter((task)=> task.group !== action.id)
                                                                                                            
             }
             return tasks;
@@ -107,7 +110,9 @@ export const store = createStore(
 
               case mutations.DELETE_EXPENS:
                 return expenses.filter((exp)=> exp.id !== action.id)
-                  
+              
+              case mutations.DELETE_ALL_EXPENSE:
+                  return expenses = []
           }          
           return expenses;
         },

@@ -27,8 +27,8 @@ h5{
 
 footer{
     
-  
     border-right: 2px solid rgb(121, 38, 86);
+ 
     
 }
 .card-group{
@@ -49,7 +49,7 @@ footer{
     border-right: 2px solid rgb(121, 38, 86);
    color: rgb(121, 38, 86); 
     position: fixed;
-  top: 13%;
+  top: 12%;
   left: 0;
 }
 div ul {
@@ -65,7 +65,7 @@ div ul li a{
 .content{
     /* width: calc(100vw - 14rem); */
     width: calc(100vw - 15%);
-    min-height: calc(100vh - 233px);
+    min-height: calc(100vh - 270px);
     position: relative;
     top: 0%;
     left: 15%;
@@ -75,7 +75,7 @@ div ul li a{
    
 }
 .card-group{
-    margin: 0px;
+    margin-left: 190px;
     width: calc(100vw - 230px);
     max-height: calc(100vh - 200px);
     
@@ -98,10 +98,17 @@ div ul li a{
     margin: 0px;
 }
 .logo{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     padding: 0px;
     border-radius: 75%;
     background-color: rgb(241, 222, 199);
     margin: auto;
+}
+.logo-social{
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    margin: 2px auto;
+    
 }

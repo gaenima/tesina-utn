@@ -52,7 +52,12 @@ if (group) {
     await collection.updateOne({ id }, { $set: { isComplete } });
   }
 };
-
+export const deleteTask = async (task) => {
+  let {id }= task
+  let db = await connectDB()
+  let collection = db.collection(`tasks`)
+  await collection.deleteOne({id},id)
+}
 app.post("/task/new", async (req, res) => {
   let task = req.body.task;
   await addNewTask(task);
@@ -90,7 +95,12 @@ export const addNewExpens = async (expens) => {
       await collection.updateOne({ id }, { $set: { name } });
     }
   };
-
+  export const deleteExpens = async (expens) => {
+    let {id }= expens
+    let db = await connectDB()
+    let collection = db.collection(`expenses`)
+    await collection.deleteOne({id},id)
+  }
 app.post("/expens/new", async (req, res) => {
   let expens = req.body.expens;
   await addNewExpens(expens);
@@ -101,6 +111,12 @@ app.post("/expens/update", async (req, res) => {
   await updateExpens(expens);
   res.status(200).send();
 }); 
+export const deleteExpens = async (expens) => {
+  let {id }= expens
+  let db = await connectDB()
+  let collection = db.collection(`expenses`)
+  await collection.deleteOne(id)
+}
 
 export const updateBudget = async (budget) => {
   let { id, amountInitial } = budget;

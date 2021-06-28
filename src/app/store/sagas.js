@@ -45,6 +45,17 @@ export function* taskModificationSaga() {
    });
   }
  }
+ export function* taskDeleteSaga(){
+  while(true){
+    const task = yield take( mutations.DELETE_TASK)
+    axios.delete(url + `/task/delete/`, {
+     task: {
+       id: task.taskID
+      }, 
+    }) 
+console.info("deleted task?!!!?", task);
+  }
+}
 
  export function* expensCreationSaga() {
    while(true){
@@ -83,6 +94,19 @@ export function* expensModificationSaga() {
   }
  }
 
+ 
+export function* expensDeleteSaga(){
+  while(true){
+    const expens = yield take( mutations.DELETE_EXPENS)
+    axios.delete(url + `/expens/delete/`, {
+     expens: {
+      id: expens.expensID
+     }
+    });
+    console.info("deleted expense?", expens);
+  }
+}
+
  export function* budgetModificationSaga() {
   while(true){
     const budget = yield take([
@@ -120,8 +144,41 @@ export function* expensModificationSaga() {
       }   
    }
  }
+ export function* deleteBygroupSaga(){
+  while(true){
+    const {id} = yield take (mutations.DELETE_By_GROUP);
+    yield put(mutations.deleteByGroup(id)) 
+  }
+}
+
+export function* deleteAllExpenseSaga(){
+  while(true){
+    yield take (mutations.DELETE_ALL_EXPENSE);
+    yield put(mutations.deleteAllExpense())
+    console.log('delete exp from saga')
+  }
+}
 
 
+// export function* userAccountCreationSaga(){
+//   while(true){
+//     const {username,password} = yield take(mutations.REQUESR_USER_ACCOUNT_CREATION);
+//     // const userID = uuidv4();
+//     // yield put(mutations.createUser(username,password));
+//     try{
+//       const { data } = yield axios.post(url + `/user/create`, {username, password });
+//       console.info('datos new user', data);
+
+//       yield put(mutations.setState({...data.state,session:{id:data.userID}}));
+//       yield put(mutations.processAuthenticateUser(mutations.AUTHENTICATED));
+
+//       history.push('/dashboard');
+//     } catch (e) {
+//       console.log('error al crear usuario!!!!', e);
+//       yield put(mutations.processAuthenticateUser(mutations.USERNAME_RESERVED));
+//     }
+//   }
+// }
 // export function* budgetCreationSaga() 
 // {//   while(true){
 //     const ownerID = `U1`;
