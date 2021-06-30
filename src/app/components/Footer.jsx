@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
 return(
 <footer className="footer"> 
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
 <a className="navbar-brand" href="#"> </a>
 <div className="collapse navbar-collapse" id="navbarColor02">
   <ul className="navbar-nav m-auto">

@@ -3,6 +3,7 @@ body{
     margin: 0px auto;
     padding: 0px;
     font-family: 'Mali', cursive; 
+  
    
 }
 #app{
@@ -79,10 +80,8 @@ div ul li a{
 }
 .card-group{
     margin-left: 250px;
-    width: calc(70vw - 300px);
+    width: calc(100vw - 300px);
     max-height: calc(100vh - 200px);
-    background-color: lightskyblue;
-    
 }
 .btn{
     width: auto;
