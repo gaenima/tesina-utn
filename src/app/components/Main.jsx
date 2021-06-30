@@ -11,10 +11,11 @@ import { ConnectedNavigation } from "./Navigation";
 import { ConnectTaskDetail } from "./TaskDetail";
 import { ConnectExpensDetail } from './ExpensDetail';
 import { ConnectBudgetD } from './BudgetD';
-import { Reports } from './Reports';
+import { ConnectedReports } from './Reports';
 import { Redirect } from 'react-router-dom';
 import { ConnectedSignup } from './Signup'
 import { ConnectedSidebar } from "./Sidebar";
+import { ConnectedContact } from './Contact'
 import Footer from './Footer'
 
 const RouteGuard = Component => ({match}) => {
@@ -71,7 +72,14 @@ const RouteGuard = Component => ({match}) => {
                      <Route 
                 exact 
                 path="/reports"
-                render = {RouteGuard(Reports)}
+                render = {RouteGuard(ConnectedReports)}
+                //render={()=>(<ConnectedReports/>)}
+                />
+
+                 <Route 
+                exact 
+                path="/contact"
+                render = {RouteGuard(ConnectedContact)}
                 //render={()=>(<ConnectedReports/>)}
                 />
                 </div>

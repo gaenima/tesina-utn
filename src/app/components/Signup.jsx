@@ -32,7 +32,7 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
         </h3>
         <br/> */}
         <div className="card-group">
-  <div className="card  col-4">
+  <div className="card  col-3">
     <img src="https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-03-512.png" className="card-img-top" alt="planning icon"/>
     <div className="card-body">
       <h5 className="card-title">Organizá tus actividades</h5>
@@ -41,7 +41,7 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
     </div>
   </div>
  
-  <div className="card col-4">
+  <div className="card col-3">
     <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-16-512.png" className="card-img-top" alt="budget icon"/>
     <div className="card-body">
       <h5 className="card-title">Administrá tu presupuesto</h5>

@@ -7,9 +7,9 @@ const sagaMiddleware = createSagaMiddleware();
  //import * as sagas from "./sagas.mock";
 import * as sagas from "./sagas";
 import * as mutations from "./mutations";
-//import currentItem from './reducers/currentItem';
-//import results from './reducers/results';
-//import suggestions from './reducers/suggestions';
+// import currentItem from './reducers/currentItem';
+// import results from './reducers/results';
+// import suggestions from './reducers/suggestions';
 
 //import { taskCreationSaga } from './sagas.mock';
 
@@ -76,7 +76,11 @@ export const store = createStore(
 
                    case mutations.DELETE_By_GROUP:
                     return tasks.filter((task)=> task.group !== action.id)
-                                                                                                           
+                    
+                  case mutations.SEARCH_TASK:
+                    const {value} = action;
+                    const task = tasks.filter((val) => val.includes(value));
+                  return task 
             }
             return tasks;
         },

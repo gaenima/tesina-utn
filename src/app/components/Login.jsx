@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 import swal from 'sweetalert'
 
-const LoginComponent = ({authenticateUser, authenticated})=>{
+export const LoginComponent = ({authenticateUser, authenticated})=>{
    
     return <div className="container" >
         
@@ -35,8 +35,8 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
                 <img src="https://cdn3.iconfinder.com/data/icons/finance-152/64/4-512.png"/>
             </aside>
         </div> */}
-<div className="card-group">
-  <div className="card  col-4">
+<div className=" card-group ">
+  <div className="card  col-3">
     {/* <img src="https://cdn2.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/723_Business_list_plan_planning_task-256.png" className="card-img-top" alt="planning icon"/> */}
     <img src="https://cdn2.iconfinder.com/data/icons/xomo-basics/128/document-03-512.png" className="card-img-top" alt="planning icon"/>
     <div className="card-body">
@@ -46,7 +46,7 @@ const LoginComponent = ({authenticateUser, authenticated})=>{
     </div>
   </div>
  
-  <div className="card col-4">
+  <div className="card col-3">
     <img src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-16-512.png" className="card-img-top" alt="budget icon"/>
     <div className="card-body">
       <h5 className="card-title">Administrá tu presupuesto</h5>

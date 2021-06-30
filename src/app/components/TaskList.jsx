@@ -7,7 +7,7 @@ import swal from 'sweetalert'
  export const TaskList = ({ tasks, name, id, createNewTask, deleteByGroup }) => (
 <div >
 
-    <div className="card p-4 mt-2 ">
+    <div className="card p-4 mt-2">
     <button type="button" className="btn btn-outline-secondary w-25 ml-auto"
      onClick={
         ()=>{ 
@@ -26,11 +26,10 @@ import swal from 'sweetalert'
 </svg>
 </button>
       <h2 className="card-title ">{name}</h2>
-      <div className="card-text">       
-         {tasks.map(task=>(
-            
+      <div className="card-text" >       
+         {tasks.map(task=>(           
             <Link to={`/task/${task.id}`} key={task.id}>
-                <div className="card p-4 "  >{task.name}</div>
+                <div className="card p-4 " id="myUL" >{task.name}</div>
             </Link> 
             
             ))}
@@ -62,6 +61,7 @@ import swal from 'sweetalert'
              }
             }
              > Borrar todo</button>
+            
              <br/>
        </div>
     </div>
@@ -104,6 +104,7 @@ const mapStateToProps = (state, {name, id, group})=>{
         id,
         
     };
+    
 };
 
  const mapDispatchToProps = (dispatch, ownProps) => {

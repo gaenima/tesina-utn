@@ -16,7 +16,26 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
             {amountInitial}
         </h2>
         <h2>   {amountFinal} </h2> */}
-   <h2 className="titulo">PRESUPUESTO</h2>
+  
+   <div className="flex row">
+    <h2 className="titulo" >PRESUPUESTO</h2>
+    
+         <span className=" w-auto ml-auto">
+           <button className="btn btn-secondary" 
+           onClick={
+            ()=>{ 
+              swal({
+                title: "Saliendo",
+                text: '¡Hasta la próxima!',
+                icon: 'info',
+               // buttons: ['Cancelar', 'Confirmar'],
+               timer: '2000'
+              })
+            }
+          }           
+           > <Link to="/">Cerrar Sesión </Link></button>           
+         </span >        
+     </div>
    <br/>
      <div className=" card p-4 mt-2 " >
   <button type="button" className="btn btn-outline-secondary w-25 ml-auto"

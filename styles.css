@@ -3,6 +3,7 @@ body{
     margin: 0px auto;
     padding: 0px;
     font-family: 'Mali', cursive; 
+   
 }
 #app{
     margin: 0px;
@@ -14,8 +15,8 @@ body{
 }
  img {
     width: 10px;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 20px auto;
+    padding: 30px;
 }
 h5{
     color: rgb(233, 74, 25);
@@ -32,7 +33,9 @@ footer{
     
 }
 .card-group{
+     /* width: calc(100vw - 50%); */
     background-color: rgb(241, 222, 199);
+    margin: 20px auto;
   
 }
 .card-img-top{
@@ -44,12 +47,12 @@ footer{
 .sidebar {
     /* width: 13rem;
     height: calc(100vh); */
-    width:10%;
+    width:12%;
   height: calc(90vh - 20px);
     border-right: 2px solid rgb(121, 38, 86);
    color: rgb(121, 38, 86); 
     position: fixed;
-  top: 12%;
+  top: 11%;
   left: 0;
 }
 div ul {
@@ -64,20 +67,21 @@ div ul li a{
 }
 .content{
     /* width: calc(100vw - 14rem); */
-    width: calc(100vw - 15%);
-    min-height: calc(100vh - 270px);
-    position: relative;
+    width: calc(90vw - 20%);
+    min-height: calc(100vh - 228px);
+    /* position: relative; */
     top: 0%;
     left: 15%;
-    right: -15%;
+    margin-left: 14%;
     
     
    
 }
 .card-group{
-    margin-left: 190px;
-    width: calc(100vw - 230px);
+    margin-left: 250px;
+    width: calc(70vw - 300px);
     max-height: calc(100vh - 200px);
+    background-color: lightskyblue;
     
 }
 .btn{
@@ -96,6 +100,7 @@ div ul li a{
 } */
 .container{
     margin: 0px;
+    width: auto;
 }
 .logo{
     width: 70px;
