@@ -44,7 +44,7 @@ onClick={
           <br/>
           <span><i>Monto </i></span>
           <div className="flex">
-          <span>$ </span>
+          <span className="mt-3">$ </span>
              <input type="number" onChange={setExpensAmount} value= {expens.amount} 
              className="form-control form-control-lg" />
              </div>
@@ -92,8 +92,7 @@ onClick={
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
+     
     </div>
 );
 

@@ -35,7 +35,8 @@ const BudgetD = ({
 </button>
 <br/>
       <div className="flex">
-         <span>$ </span>
+         <span className="mt-2">$ </span>
+      
           <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$" 
         className="form-control "/>
       </div> 

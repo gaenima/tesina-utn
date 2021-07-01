@@ -19,7 +19,11 @@ const Navigation = () => (
 
   <div className="collapse navbar-collapse" id="navbarColor02">
     <ul className="navbar-nav mr-auto">
-    
+    <li className="nav-item ">
+      
+         <span className="logoText">OrgPre </span>   
+        
+      </li>
     <li className="nav-item ">
       <Link to="/dashboard"  className="nav-link">
          <span>Actividades </span>   

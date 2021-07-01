@@ -69,7 +69,7 @@ div ul li a{
 .content{
     /* width: calc(100vw - 14rem); */
     width: calc(90vw - 20%);
-    min-height: calc(100vh - 228px);
+    min-height: calc(100vh - 234px);
     /* position: relative; */
     top: 0%;
     left: 15%;
@@ -115,4 +115,14 @@ div ul li a{
     padding: 0px;
     margin: 2px auto;
     
+}
+.logoText{
+    /* color:rgb(231, 102, 16); */
+    color: rgb(241, 222, 199);
+    border-radius: 50%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 50px;
+   
 }

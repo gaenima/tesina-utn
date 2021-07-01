@@ -3,6 +3,8 @@ import { connect} from 'react-redux';
 import * as mutations from '../store/mutations';
 import { Link } from 'react-router-dom';
 import swal from 'sweetalert'
+import NumberFormat from 'react-number-format';
+
 
 
 export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
@@ -60,8 +62,9 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
            
           { budgets.map(budget=>(
             <Link to={`/budgetD/${budget.id}`} key={budget.id}>
-         <div className="text-right" >
-          $  { budget.amountInitial } 
+         <div className="text-right">
+        
+          $ {budget.amountInitial } 
           </div>
           </Link> 
           ))}
@@ -73,8 +76,8 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
                         <h2 >Gastos totales </h2>
                                                 
                         <div className="text-right" id="gastos">
-                        $  { total = expenses.reduce(function(accumulator, expens){
-                            return accumulator += parseFloat(expens.amount)
+                        $  { total =  expenses.reduce(function(accumulator, expens){
+                            return  accumulator += parseFloat(expens.amount)
                         },0)}  </div>
                         
                         <br/>
@@ -83,6 +86,7 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
                     <h2> Monto Disponible </h2>
                     
                     {budgets.map(budget=>(<div  key={budget.id} className="text-right" id="disponible"> 
+     
                     $ { budget.amountInitial - total}</div>
             
                     ))}

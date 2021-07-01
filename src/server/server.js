@@ -7,11 +7,12 @@ import { authenticationRoute } from './authenticate';
 import path from 'path';
 import { connect } from "react-redux";
 import { deleteTask } from "../app/store/mutations";
+import { transport } from './mail'
 
 let port = process.env.PORT || 7789;
 let app = express();
 
-app.listen(port, console.log("Servidor escuchando puerto ", port));
+
 
 //  app.get("/", (req, res) => {
 //  res.send(" Hola Mundo!!!");
@@ -134,3 +135,7 @@ app.post("/budget/update", async (req, res) => {
   await updateBudget(budget);
   res.status(200).send();
 }); 
+
+
+
+app.listen(port, console.log("Servidor escuchando puerto ", port));

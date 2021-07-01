@@ -14,7 +14,7 @@ export const BudgetList = ({budgets }) => (
              className=""/>
         ))}
        </div>
-    <div>    
+    <div >    
        {budgets.map(budget=>(
          <ConnectedExpenses key={budget.id} id={budget.id} name={budget.name} 
          className="" />
