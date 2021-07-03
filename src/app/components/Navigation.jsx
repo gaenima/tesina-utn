@@ -2,7 +2,7 @@ import { connect, useStore } from "react-redux";
 import { Link } from "react-router-dom";
 import React from "react";
 import { AUTHENTICATED, NOT_AUTHENTICATED, requestAuthenticateUser, SET_STATE, SET_TASK_COMPLETE, session } from "../store/mutations";
-import { store } from "../store";
+
 const Navigation = () => (
 
    <div>
@@ -39,12 +39,16 @@ const Navigation = () => (
             Reportes 
          </Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
       <Link to="/contact" className="nav-link" >
             Contactanos 
          </Link>
+      </li> */}
+     <li className="nav-item">
+      <Link to="/redes" className="nav-link" >
+            Redes sociales 
+         </Link>
       </li>
-    
     </ul>
     
      {/* <div>

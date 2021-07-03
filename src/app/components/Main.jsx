@@ -15,7 +15,8 @@ import { ConnectedReports } from './Reports';
 import { Redirect } from 'react-router-dom';
 import { ConnectedSignup } from './Signup'
 import { ConnectedSidebar } from "./Sidebar";
-import { ConnectedContact } from './Contact'
+//import { ConnectedContact } from './Contact'
+import { ConnectedSocialMedia } from './SocialMedia'
 import Footer from './Footer'
 
 const RouteGuard = Component => ({match}) => {
@@ -76,10 +77,16 @@ const RouteGuard = Component => ({match}) => {
                 //render={()=>(<ConnectedReports/>)}
                 />
 
-                 <Route 
+                 {/* <Route 
                 exact 
                 path="/contact"
                 render = {RouteGuard(ConnectedContact)}
+                //render={()=>(<ConnectedReports/>)}
+                /> */}
+                  <Route 
+                exact 
+                path="/redes"
+                render = {RouteGuard(ConnectedSocialMedia)}
                 //render={()=>(<ConnectedReports/>)}
                 />
                 </div>

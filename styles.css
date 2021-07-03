@@ -73,10 +73,7 @@ div ul li a{
     /* position: relative; */
     top: 0%;
     left: 15%;
-    margin-left: 14%;
-    
-    
-   
+    margin-left: 14%;  
 }
 .card-group{
     margin-left: 250px;
@@ -113,8 +110,18 @@ div ul li a{
     width: 40px;
     height: 40px;
     padding: 0px;
-    margin: 2px auto;
+    margin: 4px 20px;
+   
     
+}
+.logo-redes{
+   border-radius: 5px;
+    width: 45px;
+}
+.socialAddress{
+    margin-top: 18px;
+    margin-left: 10px;
+    color:  rgb(121, 38, 86);
 }
 .logoText{
     /* color:rgb(231, 102, 16); */
