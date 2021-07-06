@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
 return(
-<footer className="footer"> 
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark p-0">
 
   
   <ul className="navbar-nav m-auto">
     
-    <li className="nav-item flex" >
+    <li className="nav-item flex " >
       
     <a className="nav-link" href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-01-256.png" className="logo-social"/></a>
    
@@ -17,7 +17,7 @@ return(
     <a className="nav-link" href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-03-256.png" className="logo-social"/></a>
     </li> 
     
-    <li className="nav-item" >
+    <li className="nav-item">
     <a className="nav-link" href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-02-256.png" className="logo-social"/></a>
     </li> 
     <li className="nav-item" >
@@ -44,7 +44,7 @@ return(
 
 
 </nav>
-</footer>  
+
 )
 }
 export default Footer

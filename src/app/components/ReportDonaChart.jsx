@@ -4,6 +4,7 @@ import { Doughnut } from 'react-chartjs-2';
 
 
 
+
 function DonaChart({tasks, task, a, b, c, ownProps, groups, arreglo} ){
     const data = {
        labels: ['Por hacer %', 'En proceso %', 'Finalizado %'],
@@ -24,10 +25,11 @@ function DonaChart({tasks, task, a, b, c, ownProps, groups, arreglo} ){
     const options = {
       title: {
         display: true,
-        text: 'Porcentaje de actividades por grupo',
+        text: 'Porcentaje de actividades por estado',
         fontSize: 20,
         fontColor: 'rgba(200,80,50,1)',
-        fontFamily: "Ubuntu"
+        //fontFamily: "Ubuntu"
+        fontFamily: 'Mali'
       }
       
     }

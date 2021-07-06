@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import {  Bar } from 'react-chartjs-2';
 import  { ConnectedReports} from './Reports';
 
+
 export function ReportBarChart ({ tasks,  arreglo}){
  
     const data = {
@@ -25,10 +26,11 @@ export function ReportBarChart ({ tasks,  arreglo}){
     const options = {
       title: {
         display: true,
-        text: 'Cantidad de actividades por grupo',
+        text: 'Cantidad de actividades por estado',
         fontSize: 20,
         fontColor: 'rgba(200,80,50,1)',
-        fontFamily: "Ubuntu"
+        //fontFamily: "Ubuntu"
+        fontFamily: 'Mali'
       },
       scales:{
         yAxes:[

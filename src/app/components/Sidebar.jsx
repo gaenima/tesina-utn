@@ -7,7 +7,7 @@ const Sidebar =() => {
     return (
      
         <div className="sidebar">
-            <ul>
+            <ul className="sidebar-items">
                 <li className="nav-item">
                     <Link to="/dashboard" className="nav-link"> Actividades</Link>
                 </li>

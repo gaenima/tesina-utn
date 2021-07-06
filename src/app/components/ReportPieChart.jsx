@@ -4,6 +4,7 @@ import {  Bar } from 'react-chartjs-2';
 import {BudgetDetail, ConnectedBudgetDetail}  from './BudgetDetail'
 
 
+
 export function ReportBarraChart ({expenses, budgets, disp, amountInitial}){
   
     const data = {
@@ -31,7 +32,8 @@ export function ReportBarraChart ({expenses, budgets, disp, amountInitial}){
          text: 'Presupuesto disponible y gastos totales',
          fontSize: 20,
          fontColor: 'rgba(200,80,50,1)',
-         fontFamily: "Ubuntu"
+         //fontFamily: "Ubuntu"
+         fontFamily: 'Mali'
        },
        scales:{
         yAxes:[

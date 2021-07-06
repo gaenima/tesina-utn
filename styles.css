@@ -27,12 +27,6 @@ h5{
     font-size: medium;
 }
 
-footer{
-    
-    border-right: 2px solid rgb(121, 38, 86);
- 
-    
-}
 .card-group{
      /* width: calc(100vw - 50%); */
     background-color: rgb(241, 222, 199);
@@ -59,17 +53,22 @@ footer{
 div ul {
     list-style: none;
     padding: 1rem 2rem;
+    
 }
 div ul li{
+    margin-top: 1rem;
   margin-bottom: 1rem;
 }
 div ul li a{
     text-decoration: none;
 }
+.sidebar-items{
+    margin-top: 50px;
+}
 .content{
     /* width: calc(100vw - 14rem); */
     width: calc(90vw - 20%);
-    min-height: calc(100vh - 234px);
+    min-height: calc(100vh - 245px);
     /* position: relative; */
     top: 0%;
     left: 15%;
@@ -110,8 +109,7 @@ div ul li a{
     width: 40px;
     height: 40px;
     padding: 0px;
-    margin: 4px 20px;
-   
+    margin: 0px 20px;  
     
 }
 .logo-redes{

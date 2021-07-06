@@ -6,7 +6,7 @@ import './initialize-db';
 import { authenticationRoute } from './authenticate';
 import path from 'path';
 import { connect } from "react-redux";
-import { deleteTask } from "../app/store/mutations";
+//import { deleteTask } from "../app/store/mutations";
 import { transport } from './mail'
 
 let port = process.env.PORT || 7789;
@@ -57,7 +57,7 @@ export const deleteTask = async (task) => {
   let {id }= task
   let db = await connectDB()
   let collection = db.collection(`tasks`)
-  await collection.deleteOne({id},id)
+  await collection.deleteOne(id)
 }
 app.post("/task/new", async (req, res) => {
   let task = req.body.task;
@@ -100,7 +100,7 @@ export const addNewExpens = async (expens) => {
     let {id }= expens
     let db = await connectDB()
     let collection = db.collection(`expenses`)
-    await collection.deleteOne({id},id)
+    await collection.deleteOne(id)
   }
 app.post("/expens/new", async (req, res) => {
   let expens = req.body.expens;
@@ -112,12 +112,12 @@ app.post("/expens/update", async (req, res) => {
   await updateExpens(expens);
   res.status(200).send();
 }); 
-export const deleteExpens = async (expens) => {
-  let {id }= expens
-  let db = await connectDB()
-  let collection = db.collection(`expenses`)
-  await collection.deleteOne(id)
-}
+// export const deleteExpens = async (expens) => {
+//   let {id }= expens
+//   let db = await connectDB()
+//   let collection = db.collection(`expenses`)
+//   await collection.deleteOne(id)
+// }
 
 export const updateBudget = async (budget) => {
   let { id, amountInitial } = budget;

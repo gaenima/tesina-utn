@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import swal from 'sweetalert'
 
 export const ExpensesList = ({ expenses, id, createNewExpens, deleteAllExpense, amount })=>(  
-<div className="card p-4 mt-2 ">
+<div className="card p-4 mt-2 mb-2">
 <button type="button" className="btn btn-outline-secondary w-25 w-25 ml-auto"
 onClick={
     ()=>{ 

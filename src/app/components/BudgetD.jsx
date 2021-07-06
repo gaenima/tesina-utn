@@ -37,7 +37,7 @@ const BudgetD = ({
       <div className="flex">
          <span className="mt-2">$ </span>
       
-          <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$" 
+          <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$"   
         className="form-control "/>
       </div> 
            <br/>
@@ -59,11 +59,7 @@ const BudgetD = ({
       <br/>
       <br/>
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+    
     </div>
 );
 const mapStateToProps =(state, ownProps)=> {
