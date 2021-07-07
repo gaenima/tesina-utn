@@ -24,7 +24,7 @@ const TaskDetail = ({
               ()=>{ 
                 swal({
                   title: "Modificar actividad",
-                  text: 'Podés cambiar el nombre, indicar si la prioridad es opcional o importante. También cambiar el estado y elegir entre "Por hacer, En proceso o Finalizado". El botón "Listo" guarda los cambios y vuelve al listado de actividades',
+                  text: 'Se puede cambiar el nombre, la prioridad y el estado de esta actividad. El botón "Listo" guarda los cambios y vuelve al listado',
                   icon: 'info',
                   timer: '10000'
                 })

@@ -13,7 +13,7 @@ import swal from 'sweetalert'
         ()=>{ 
           swal({
             title: "Por hacer, En proceso, Finalizado",
-            text: 'Son los estado por los que puede pasar cada actividad para indicar su evolución. Se pueden agregas las actividades deseadas en cada estado. El botón "Eliminar todo" borra el listado correspondiente',
+            text: 'Son los estados por los que pasan las actividades.  Se pueden agregar las que se deseen. El botón "Eliminar todo" borra el listado correspondiente',
             icon: 'info',
            timer: '10000'
           })
@@ -60,7 +60,7 @@ import swal from 'sweetalert'
                 })             
              }
             }
-             > Borrar todo</button>
+             > Borrar esta lista</button>
             
              <br/>
        </div>

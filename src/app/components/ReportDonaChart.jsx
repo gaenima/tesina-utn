@@ -26,7 +26,7 @@ function DonaChart({tasks, task, a, b, c, ownProps, groups, arreglo} ){
       title: {
         display: true,
         text: 'Porcentaje de actividades por estado',
-        fontSize: 20,
+        fontSize: 30,
         fontColor: 'rgba(200,80,50,1)',
         //fontFamily: "Ubuntu"
         fontFamily: 'Mali'

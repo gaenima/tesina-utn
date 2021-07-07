@@ -27,7 +27,7 @@ export function ReportBarChart ({ tasks,  arreglo}){
       title: {
         display: true,
         text: 'Cantidad de actividades por estado',
-        fontSize: 20,
+        fontSize: 30,
         fontColor: 'rgba(200,80,50,1)',
         //fontFamily: "Ubuntu"
         fontFamily: 'Mali'

@@ -21,7 +21,7 @@ const BudgetD = ({
             ()=>{ 
               swal({
                 title: "Modificar monto inicial",
-                text: 'Se puede modoficar este monto. Los gastos que agregues se restarán de este número y se indicará en el monto disponible.',
+                text: 'Se puede modoficar este monto en cualquier momento. El botón Listar guarda los cambios y redirige a Presupuesto.',
                 icon: 'info',
                 timer: '10000'
               })

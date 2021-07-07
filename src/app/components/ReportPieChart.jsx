@@ -30,7 +30,7 @@ export function ReportBarraChart ({expenses, budgets, disp, amountInitial}){
        title: {
          display: true,
          text: 'Presupuesto disponible y gastos totales',
-         fontSize: 20,
+         fontSize: 30,
          fontColor: 'rgba(200,80,50,1)',
          //fontFamily: "Ubuntu"
          fontFamily: 'Mali'

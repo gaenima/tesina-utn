@@ -15,6 +15,7 @@ import { ConnectedReports } from './Reports';
 import { Redirect } from 'react-router-dom';
 import { ConnectedSignup } from './Signup'
 import { ConnectedSidebar } from "./Sidebar";
+import {ConnectedLogout} from './Logout'
 //import { ConnectedContact } from './Contact'
 import { ConnectedSocialMedia } from './SocialMedia'
 import Footer from './Footer'

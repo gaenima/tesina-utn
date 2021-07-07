@@ -2,29 +2,17 @@ import React from 'react'
 import { connect} from "react-redux"
 import swal from 'sweetAlert'
 import { Link } from 'react-router-dom';
-
+import { ConnectedLogout } from './Logout'
 
 const SocialMedia = () => {
     return (
         <div className="container">
             <div className="flex row">
             <h2 className="titulo" >REDES SOCIALES</h2>
-            
-                <span className=" w-auto ml-auto">
-                <button className="btn btn-secondary" 
-                onClick={
-                    ()=>{ 
-                    swal({
-                        title: "Saliendo",
-                        text: '¡Hasta la próxima!',
-                        icon: 'info',
-                    // buttons: ['Cancelar', 'Confirmar'],
-                    timer: '2000'
-                    })
-                    }
-                }           
-                > <Link to="/">Cerrar Sesión </Link></button>           
-                </span >        
+            <div className="w-auto ml-auto">
+             <ConnectedLogout />
+           </div> 
+                 
             </div>
             <br></br>
             <div className="card p-4 mt-2 mb-2">
@@ -33,9 +21,9 @@ const SocialMedia = () => {
         ()=>{ 
           swal({
             title: "Contactanos",
-            text: 'Usá nuestras redes sociales para contactarte con la desarrolladora o unirte a la comunidad OrgPre',
+            text: 'Usá nuestras redes sociales para contactarte con los desarrolladores o unirte a la comunidad OrgPre',
             icon: 'info',
-           timer: '5000'
+           timer: '10000'
           })
         }
       }

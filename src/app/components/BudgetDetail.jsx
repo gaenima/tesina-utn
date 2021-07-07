@@ -3,7 +3,7 @@ import { connect} from 'react-redux';
 import * as mutations from '../store/mutations';
 import { Link } from 'react-router-dom';
 import swal from 'sweetalert'
-import NumberFormat from 'react-number-format';
+import { ConnectedLogout } from './Logout'
 
 
 
@@ -21,23 +21,10 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
   
    <div className="flex row">
     <h2 className="titulo" >PRESUPUESTO</h2>
-    
-         <span className=" w-auto ml-auto">
-           <button className="btn btn-secondary" 
-           onClick={
-            ()=>{ 
-              swal({
-                title: "Saliendo",
-                text: '¡Hasta la próxima!',
-                icon: 'info',
-               // buttons: ['Cancelar', 'Confirmar'],
-               timer: '2000'
-              })
-            }
-          }           
-           > <Link to="/">Cerrar Sesión </Link></button>           
-         </span >        
-     </div>
+    <div className="w-auto ml-auto">
+      <ConnectedLogout />
+    </div>  
+    </div>
    <br/>
      <div className=" card p-4 mt-2 " >
   <button type="button" className="btn btn-outline-secondary w-25 ml-auto"
@@ -45,7 +32,7 @@ export const BudgetDetail = ({  budgets, name, amountInitial, amountFinal,
     ()=>{ 
       swal({
         title: "Presupuesto",
-        text: 'Podés modificar el monto inicial clicando en la cifra. A medida que agregues gastos se calculará el monto disponible. Éste es la diferencia entre los montos inicial y la suma de gastos.',
+        text: 'Se puede modificar el monto inicial. A medida que agregues gastos se calculará el monto disponible.',
         icon: 'info',
         timer: '10000'
       })

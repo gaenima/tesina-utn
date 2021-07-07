@@ -21,7 +21,7 @@ onClick={
     ()=>{ 
       swal({
         title: "Modificar Gasto",
-        text: 'Se puede modificar tanto el concepto o descripción como el monto del gasto. El botón "Listo" guarda los cambios y regresa al listado de gastos. El botón "Borrar" solo elimina este gasto y se recalcula el monto disponible.' ,
+        text: 'Se puede modificar la descripción y el monto. El botón "Listo" guarda cambios y regresa al listado. El botón "Borrar" elimina este gasto y se recalcula el monto disponible.' ,
         icon: 'info',
         timer: '10000'
       })
