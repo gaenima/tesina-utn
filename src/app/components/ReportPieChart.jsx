@@ -39,7 +39,7 @@ export function ReportBarraChart ({expenses, budgets, disp, amountInitial}){
         yAxes:[
           {
             ticks:{
-              // min: 0 ,
+              min: budgets.dispo ,
               // max: 1000,
               // stepSize: 100
             }

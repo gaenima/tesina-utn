@@ -8,8 +8,9 @@ import swal from 'sweetalert'
 const Logout = () => {
     return (
         <div>
-              <span className=" w-auto ml-auto">
-                <button className="btn btn-secondary" 
+              <span className=" w-auto ml-auto mt-4">
+              <Link to="/" >
+                <button className="btn btn-secondary button" 
                 onClick={
                     ()=>{ 
                     swal({
@@ -21,7 +22,9 @@ const Logout = () => {
                     })
                     }
                 }           
-                > <Link to="/">Cerrar Sesión </Link></button>           
+                > Cerrar Sesión 
+                </button>   
+                </Link>        
                 </span >    
         </div>
     )

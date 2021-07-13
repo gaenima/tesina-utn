@@ -24,7 +24,7 @@ export const Reports = () => (
         ()=>{ 
           swal({
             title: "Reporte 1",
-            text: 'En el eje X se detallan los estados de las actividades. En el eje Y se reflejan las cantidades',
+            text: 'Cada barra representa un estado. Al posar el puntero del mouse sobre las barras aparen las cantidades',
             icon: 'info',
            timer: '5000'
           })

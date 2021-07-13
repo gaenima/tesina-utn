@@ -34,11 +34,12 @@ const BudgetD = ({
 </svg>
 </button>
 <br/>
+     <form>
       <div className="flex">
          <span className="mt-2">$ </span>
       
-          <input type="number" onChange={setBudget}value={ budget.amountInitial} placeholder="$"   
-        className="form-control "/>
+          <input type="number" required onChange={setBudget}value={ budget.amountInitial}    
+        className="form-control"  />
       </div> 
            <br/>
            <div>
@@ -46,6 +47,7 @@ const BudgetD = ({
             <button className="btn btn-primary mt-2" >Listo</button>
         </Link>
         </div>
+        </form>
         </div>
        <br/>
       <br/>

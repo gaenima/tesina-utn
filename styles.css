@@ -88,11 +88,11 @@ div ul li a{
 .titulo{
     margin-left: 0px;
     position: relative;
-    color:  rgb(121, 38, 86);;
+    color:  rgb(121, 38, 86);
 }
-/* .pie{
-    margin-bottom: 0px;
-} */
+.button{
+   color: rgb(121, 38, 86);
+}
 .container{
     margin: 0px;
     width: auto;
@@ -128,6 +128,10 @@ div ul li a{
     font-size: 30px;
     margin-top: 10px;
     margin-left: 3px;
-    margin-right: 50px;
-   
+    margin-right: 50px; 
+}
+.error-form{
+    color: red;
+    font-size: 18px;
+
 }

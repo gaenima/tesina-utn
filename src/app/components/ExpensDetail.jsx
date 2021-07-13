@@ -36,7 +36,7 @@ onClick={
           <br/>
           <div>
           <span><i>Descripción </i></span>
-            <input  onChange={setExpensName} value={expens.name} 
+            <input name="nombre" required onChange={setExpensName} value={expens.name} 
             className="form-control form-control-lg"/>
             
           </div>   
@@ -45,7 +45,7 @@ onClick={
           <span><i>Monto </i></span>
           <div className="flex">
           <span className="mt-3">$ </span>
-             <input type="number" onChange={setExpensAmount} value= {expens.amount} 
+             <input type="number" name="monto" required={true} onChange={setExpensAmount} value= {expens.amount} 
              className="form-control form-control-lg" />
              </div>
             </div> 
@@ -95,6 +95,13 @@ onClick={
      
     </div>
 );
+// const errors = () => {
+//   let nom = e.target[`nombre`].value;
+//   let mon = e.target[`monto`].value;
+//   if(mon == ''){
+//     return 'Monto requerido'
+//   }
+// }
 
 const mapStateToProps =(state, ownProps)=> {
     let id = ownProps.match.params.id;

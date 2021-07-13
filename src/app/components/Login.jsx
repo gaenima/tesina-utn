@@ -63,14 +63,14 @@ export const LoginComponent = ({authenticateUser, authenticated})=>{
           <div>
             <span>Usuario</span>
             <input type="text" placeholder="Usuario" name="username" 
-            defaultValue="Dev" className="form-control"/>
+            defaultValue="Dev" className="form-control" required/>
           </div>  
           <div>
             <span>Contraseña</span>
-            <input type="password" placeholder="Contraseña" name="password"
-             className="form-control mt-2"/>
+            <input type="password" placeholder="Contraseña" name="password" 
+             className="form-control mt-2" required/>
             {authenticated === mutations.NOT_AUTHENTICATED  
-             ? <p>Usuario o contraseña incorrectos</p>
+             ? <p className="error-form"><em>Usuario o contraseña incorrectos</em></p>
         
             : null
            }

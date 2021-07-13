@@ -15,7 +15,7 @@ const SocialMedia = () => {
                  
             </div>
             <br></br>
-            <div className="card p-4 mt-2 mb-2">
+            <div className="card p-4 mt-2">
             <button type="button" className="btn btn-outline-secondary w-25 ml-auto mb-2"
      onClick={
         ()=>{ 

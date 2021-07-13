@@ -59,15 +59,16 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
         <form onSubmit={requestUserAccountCreation} method='post'>
             <div >
                 <span>Usuario</span>
-                <input type="text"  name="username" placeholder="Ingrese un usuario" className="form-control" />
+                <input type="text"  name="username" placeholder="Ingrese un usuario" className="form-control" required/>
+                
             </div>
             <div>
                 <span>Correo</span>
-                <input type="text"  name="correo" placeholder="Ingrese un correo" className="form-control" />
+                <input type="text"  name="correo" placeholder="Ingrese un correo" className="form-control" required/>
             </div>
             <div>
                 <span>Contraseña</span>
-                <input type="password" name="password" placeholder="Ingrese una clave" className="form-control" />
+                <input type="password" name="password" placeholder="Ingrese una clave" className="form-control" required/>
             </div>
             <br/>
           
