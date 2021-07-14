@@ -55,7 +55,7 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
       <h2>
             Crear una cuenta
         </h2>
-        <br></br>
+        
         <form onSubmit={requestUserAccountCreation} method='post'>
             <div >
                 <span>Usuario</span>
@@ -76,6 +76,12 @@ export const Signup = ({requestUserAccountCreation,authenticated}) => {
          
             <button type="submit" className="form-control mt-2 btn btn-primary">Crear cuenta</button>
         </form>
+       
+        <h4 className="m-2">O registrate con </h4>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png" className="logo-social mb-2"/> </Link>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-256.png" className="logo-social mb-2"/> </Link>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-256.png" className="logo-social mb-2"/> </Link>
+
         <br/>
         <h4>¿Ya tienes una cuenta?</h4>
         <br/>

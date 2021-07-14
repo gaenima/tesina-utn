@@ -33,6 +33,7 @@ import swal from 'sweetalert'
             </Link> 
             
             ))}
+            
         </div> 
         <div className="flex mt-2">        
             <button onClick={() => createNewTask(id)}
@@ -61,7 +62,28 @@ import swal from 'sweetalert'
              }
             }
              > Borrar esta lista</button>
-            
+            <button  className="btn btn-dark "
+              onClick={
+                ()=>{ 
+                  swal({
+                    title: "Google Calendar",
+                    text: '¿Desea ingresar al calendario de Google?',
+                    icon: 'warning',
+                    buttons: ['Cancelar', 'Confirmar'],
+                  }).then(response=>{
+                    if(response){
+                      
+                      swal({
+                        text: 'Abriendo el calendario de Google',
+                        icon: 'success',
+                        timer:'2000'
+      
+                      })
+                    }
+                  })             
+               }
+              }
+            >Ver calendario</button>
              <br/>
        </div>
     </div>

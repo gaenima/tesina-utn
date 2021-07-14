@@ -79,6 +79,17 @@ export const LoginComponent = ({authenticateUser, authenticated})=>{
             className="form-control mt-2 btn btn-primary"
             >Iniciar sesión</button>
         </form>
+        <h4 className="mt-2 mb-2">O ingresá con </h4>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_google-256.png" className="logo-social mb-2"/> </Link>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-256.png" className="logo-social mb-2"/> </Link>
+        <Link to="#"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_twitter-256.png" className="logo-social mb-2"/> </Link>
+
+        <br/>
+        <br />
+        <div className="flex">
+        <h6 className="m-2">¿Olvidaste tu contraseña? </h6>
+       <h6 className="mt-2"> <Link to="#"> Recuperala</Link> </h6>
+        </div>
         <br/>
         <h4>¿No te registraste?</h4>
         <br/>
